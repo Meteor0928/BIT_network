@@ -34,21 +34,7 @@ def index():
         else:
             User_Info().saveUserInfo(us_info, true_flag)
         us_info = User_Info().getUserInfo()
-        
-        
         return render_template('index.html', us_info=us_info, info=output)
-    
-@app.route('/upload', methods=['GET', 'POST'])
-def upload():
-    files = request.files.get('file')
-    if not files:
-        return 'Please upload file!'
-    with open(r'C:\Users\ZQCheng\Desktop\Network\static\{}'.format(files.filename), 'wb') as fd:
-        fd.write(files.read())
-    return render_template('download.html', url='/static/{}'.format(files.filename))
-
-
-   
     
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port='8000')
