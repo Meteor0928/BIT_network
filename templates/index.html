@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>BIT Network</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" type="text/css">
+<link rel="icon" href="{{ url_for('static', filename='images/me.ico')}}" type="image/x-icon"/>
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/me.ico')}}" type="image/x-icon"/>
+</head>
+
+<body>
+<div class='body_div'>
+	<h1>Network Authentication System</h1>
+	<div class='form_info'>
+		<form action="/" method="post">
+			<div class='user_info'>
+				<input class="entry" type='text' name='usr' placeholder="Username" value='{{ us_info[0] }}' autocomplete="off">
+				<input class="entry" type='password' name='pwd' placeholder="Password" value='{{ us_info[1] }}'>
+			</div>
+			<div class='type_logout'>
+				<div class='local'>
+					<input id='radio-y' type='radio' name='type_logout' value='y' checked="checked">
+					<label for='radio-y' class="radio-label">Local Network</label>
+				</div>
+				<div class='all'>
+					<input id='radio-n' type='radio' name='type_logout' value='n'>
+					<label for='radio-n' class="radio-label">All Network</label>
+				</div>
+			</div>
+			<div class='btn_method'>
+				<input class="btn" type='submit' name='method' id='login' value='Login'>	
+				<input class="btn" type='reset' id='clear' value='Clear'>
+				<input class="btn" type='submit' name='method' id='Logout' value='Logout'>
+			</div>
+			<div class='output_info'>
+				<textarea>{{ info }}</textarea>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
