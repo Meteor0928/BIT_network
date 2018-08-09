@@ -1,0 +1,129 @@
+body {
+	background-color: #FFF;
+	font-family: Microsoft YaHei UI; 
+	font-size: 18px;
+}
+
+.body_div {
+	text-align: center;
+	width: 800px;
+	height: 600px;
+	margin: 80px auto 0;
+}
+
+h1 {
+	color: red;
+	font-size: 1.75em;
+	height: 100px;
+	line-height: 100px;
+}
+
+.form_info {
+	width: 80%;
+	margin: 0 auto;
+	height: 450px;
+	background-color: #EEE;
+	border-radius: 20px;
+}
+
+form {
+	height: 100%;
+}
+
+.user_info {
+	width: 60%;
+	float: left;
+	height: 150px;
+	margin-top: 30px;
+}
+
+.type_logout {
+	width: 40%;
+	float: left;
+	height: 150px;
+	margin-top: 30px;
+}
+
+.btn_method {
+	width: 100%;
+	float: left;
+	height: 90px;
+}
+.output_info {
+	width: 100%;
+	float: left;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+form input {
+	height: 45px;
+	margin: 15px auto;
+	width: 250px;
+	padding: 0.5em;
+	border: none;
+	border-radius: 10px;
+	font-size: 1em;
+}
+
+.entry:focus {
+	background-color: #BBB;
+	color: #000;
+}
+
+.local, .all {
+	height: 50%;
+}
+
+
+.type_logout input {
+	width: 25px;
+	display: block;
+	float: left;
+	height: 100%;
+	margin: auto 10px;
+	margin-left: 30px;
+	color:red;
+}
+
+.type_logout label {
+	width: 170px;
+	float: left;
+	height: 100%;
+	margin: 0 10px;
+	line-height: 75px;
+	font-size: 16px;
+	text-align: left;
+	color: #000;
+}
+
+form input.btn {
+	height: 50px;
+	width: 18%;
+	color: #fff;
+	margin: 20px;
+}
+
+form input.btn:active {
+	box-shadow: inset 0px 0px 5px #333;
+}
+
+.output_info textarea {
+	width: 55%;
+	height: 120px;
+	font-size: 14px;
+	border-radius: 5px;
+	margin: 15px auto;
+}
+
+#login {
+	background-color: #EA0;
+}
+
+#clear {
+	background-color: #0A0;
+}
+
+#logout {
+	background-color: #0AE;
+}
