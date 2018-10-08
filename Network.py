@@ -6,8 +6,7 @@ import requests
 
 class BIT_Network():
     def __init__(self, userInfo):
-        self.web_port = 801        
-        self.url_init = 'http://10.0.0.55:{}'.format(self.web_port)
+        self.url_init = 'http://10.0.0.55'
         
         self.u_name = userInfo[0]
         self.u_pwd = userInfo[1]
@@ -18,14 +17,14 @@ class BIT_Network():
             'Cache-Control': 'no-cache',
             'Connection': 'keep-alive',
             'DNT': '1',
-            'Host': '10.0.0.55:{}'.format(self.web_port),
+            'Host': '10.0.0.55',
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
             'X-Requested-With': 'XMLHttpRequest',
         }
         
         self.url_BIT = self.url_init + '/include/auth_action.php'
         self.url_info = self.url_init + '/srun_portal_pc_succeed.php'
-        self.url_logout = self.url_init[:-4] + '/cgi-bin/srun_portal'
+        self.url_logout = self.url_init + '/cgi-bin/srun_portal'
         
         self.bit = requests.session()
         
